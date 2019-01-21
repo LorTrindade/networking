@@ -4,8 +4,8 @@
   "description": "Projeto do novo site do WoMakersCode feito em Node.js, Jekill & HTML",
   "main": "index.js",
   "scripts": {
-    "lint": "node_modules/.bin/eslint *.js",
-    "fix": "node_modules/.bin/eslint *.js --fix",
+    "lint": "eslint ./src",
+    "fix": "eslint ./src --fix",
     "prepush": "npm run lint",
     "build-pages": "node ./build_scripts/builder.js",
     "start": "concurrently --kill-others \"nodemon -e js,json,css,md -i build -x \\\"npm run build-pages\\\"\" \"live-server ./build\""
