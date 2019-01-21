@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Sem alterações no projeto principal.
 
+## [1.5.3] - 2019-01-21
+### Added
+- Alteração no arquivo **README.md**, explicando onde devem ser executados os comandos no projeto.
+
 ## [1.5.2] - 2019-01-21
 ### Added
 - Alteração no badge de Downloads no arquivo **README.md**

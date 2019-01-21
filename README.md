@@ -22,7 +22,7 @@ Desenvolvimento de um novo site do **[WoMakersCode](womakerscode.org/)**. Com in
 
 1) Faça um fork desse projeto.
 
-2) Após isso, execute o comando: 
+2) Após isso, execute o comando **dentro da pasta src**: 
 
 ```
 > npm install
@@ -30,7 +30,7 @@ Desenvolvimento de um novo site do **[WoMakersCode](womakerscode.org/)**. Com in
 
 Pois ele irá instalar todas as dependências necessárias para a execução do projeto. Observem que ele irá criar uma pasta chamada **node_modules**
 
-3) Depois, bastam executar o comando abaixo:
+3) Depois, bastam executar o comando abaixo **dentro da pasta src**:
 
 ```
 > npm run start
@@ -47,7 +47,7 @@ pages/teste.md
 
 ```
 
-Daí basta começar a criar a página no formato **Markdown** ou **Jekill**. Depois que concluir a página, basta executar o seguinte comando no prompt de comando:
+Daí basta começar a criar a página no formato **Markdown** ou **Jekyll**. Depois que concluir a página, basta executar o seguinte comando no prompt de comando:
 
 ```
 > npm rum build:pages
@@ -57,7 +57,7 @@ Este comando irá criar uma espécie de 'transpiler' do que você criou no arqui
 
 Com isso, basta começar a fazer as alterações necessárias que o projeto automaticamente irá alterar em tempo real para você!
 
-Após isso, execute o comando para visualizar as mudanças realizadas:
+Após isso, execute o comando para visualizar as mudanças realizadas **dentro da pasta src**:
 
 ```
 > npm run start
