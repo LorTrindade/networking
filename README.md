@@ -35,7 +35,7 @@ Pois ele irá instalar todas as dependências necessárias para a execução do 
 
 E vòilá! O projeto será executado na porta **http://127.0.0.1:8080/**. Conforme podem ver na imagem de exemplo abaixo:
 
-![alt_text](https://imgsafe.org/image/509ccb6b93)
+![alt_text](https://i.imgsafe.org/51/5167d436cd.png)
 
 
 ## Desejam Propor Melhorias no Código? Façam Pull Request!!! 🔥
