@@ -1,3 +1,6 @@
+/* eslint-disable block-scoped-var */
+/* eslint-disable vars-on-top */
+/* eslint-disable no-var */
 const fs = require('fs-extra');
 const path = require('path');
 const pageTemplate = require('./page_template');
@@ -25,6 +28,7 @@ const pages = {}; const
 
 console.log('Loading pages...');
 try {
+  // eslint-disable-next-line block-scoped-var
   for (var page of fs.readdirSync(pagesPath)) {
     pages[page] = fs.readFileSync(path.join(pagesPath, page), 'utf8');
   }
@@ -46,6 +50,7 @@ try {
 // Generate each page from the data provided, using the template.
 console.log('Generating pages...');
 try {
+  // eslint-disable-next-line no-redeclare
   for (var page of Object.entries(pages)) {
     const pageName = page[0].slice(0, page[0].lastIndexOf('.'));
     const metaData = pagesMeta.hasOwnProperty(`${pageName}.json`)

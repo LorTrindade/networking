@@ -1,6 +1,7 @@
 const md = require('markdown-it')();
 
 module.exports = {
+  // eslint-disable-next-line no-undef
   generatePage(pageContent, pageMeta = defaultMeta) {
     return `<!DOCTYPE html>
 <html lang="${pageMeta.lang || this.defaultMeta.lang}">
@@ -11,6 +12,7 @@ module.exports = {
     <meta name="keywords" content="${pageMeta.keywords || this.defaultMeta.keywords}">
     <meta name="author" content="${pageMeta.author || this.defaultMeta.author}">
     ${
+  // eslint-disable-next-line no-nested-ternary
   pageMeta.hasOwnProperty('extra')
     ? pageMeta.extra.length
       ? pageMeta.extra.map(value => `<meta ${value}>`)
@@ -19,6 +21,7 @@ module.exports = {
 }
     <meta name="description" content="${pageMeta.description || this.defaultMeta.description}">
     ${
+  // eslint-disable-next-line no-nested-ternary
   pageMeta.hasOwnProperty('stylesheets')
     ? pageMeta.stylesheets.length
       ? pageMeta.stylesheets.map(value => `<link rel="stylesheet" href="${value}">`)
@@ -26,6 +29,7 @@ module.exports = {
     : this.defaultMeta.stylesheets.map(value => `<link rel="stylesheet" href="${value}">`)
 }
     ${
+  // eslint-disable-next-line no-nested-ternary
   pageMeta.hasOwnProperty('scripts')
     ? pageMeta.scripts.length
       ? pageMeta.scripts.map(value => `<script src="${value}"></script>`)

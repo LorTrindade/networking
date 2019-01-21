@@ -4,8 +4,7 @@
   "description": "Projeto do novo site do WoMakersCode feito em Node.js, Jekill & HTML",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint ./src",
-    "fix": "eslint ./src --fix",
+    "lint": "eslint --ext .js,.html -f ./node_modules/eslint-friendly-formatter . --fix",
     "prepush": "npm run lint",
     "build-pages": "node ./build_scripts/builder.js",
     "start": "concurrently --kill-others \"nodemon -e js,json,css,md -i build -x \\\"npm run build-pages\\\"\" \"live-server ./build\""
@@ -35,6 +34,8 @@
   "homepage": "https://github.com/WoMakersCode/networking/blob/master/README.md",
   "dependencies": {
     "concurrently": "^3.5.1",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-plugin-html": "^5.0.0",
     "fs-extra": "^4.0.2",
     "live-server": "^1.2.1",
     "markdown-it": "^8.4.0",
