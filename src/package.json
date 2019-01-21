@@ -2,6 +2,7 @@
   "name": "novo-site-womakerscode",
   "version": "1.0.0",
   "description": "Projeto do novo site do WoMakersCode feito em Node.js, Jekill & HTML",
+  "homepage": "http://womakerscode.org/",
   "main": "index.js",
   "scripts": {
     "lint": "eslint --ext .js,.html -f ./node_modules/eslint-friendly-formatter . --fix",
@@ -31,7 +32,6 @@
   "bugs": {
     "url": "https://github.com/WoMakersCode/networking/issues"
   },
-  "homepage": "https://github.com/WoMakersCode/networking/blob/master/README.md",
   "dependencies": {
     "concurrently": "^3.5.1",
     "eslint-friendly-formatter": "^4.0.1",

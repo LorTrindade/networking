@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/womakerscode/networking.svg?branch=master)](https://travis-ci.org/womakerscode/networking)
+![Dependecies](https://david-dm.org/womakerscode/networking.svg)
+
 # Novo Site: WoMakersCode
 
 ![alt_text](https://user-images.githubusercontent.com/2198735/34808410-fa314386-f675-11e7-9dbf-3dd9b06534d8.png)
