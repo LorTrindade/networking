@@ -67,7 +67,7 @@ Caso tenham dúvidas com respeito ao tópico acima, não se hesite em abrir uma 
 
 ## Observações Finais: ⭐️
 
-Esse projeto foi baseado no **[Node Static Page Generator](https://github.com/Chalarangelo/node-static-page-generator)**. Caso alguém deseja contribuir com o projeto (criando uma nova página), recomendo que dêem uma olhada no **[README.md]()** do projeto, para que possa entender como funciona o código. 
+Esse projeto foi baseado no **[Node Static Page Generator](https://github.com/Chalarangelo/node-static-page-generator)**. Caso alguém deseja contribuir com o projeto (criando uma nova página), recomendo que dêem uma olhada no **[README.md](https://github.com/WoMakersCode/networking/blob/master/README.md)** do projeto, para que possa entender como funciona o código. 
 Procurei fazer algumas modificações na arquitetura do projeto original, visando justamente a melhoria e qualidade na entrega do código.
 Dúvidas, não hesite em contatar-nos, abrindo uma **[ISSUE](https://github.com/WoMakersCode/networking/issues)** que estaremos tirando todas as dúvidas inerente ao projeto desenvolvido aqui! 😃
 
