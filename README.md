@@ -11,7 +11,7 @@ Desenvolvimento de um novo site do **[WoMakersCode](womakerscode.org/)**. Com in
 
 - Visual Studio Code
 - Node.js - [DOWNLOAD](https://nodejs.org/pt-br)
-- Jekill - [Docs](https://jekyllrb.com/)
+- Jekyll - [Docs](https://jekyllrb.com/)
 - HTML, CSS & JavaScript
 - Boostrap 3/4 - [DOWNLOAD](https://getbootstrap.com/)
 - Node Static Page Generator - [DOWNLOAD](https://github.com/Chalarangelo/node-static-page-generator)
