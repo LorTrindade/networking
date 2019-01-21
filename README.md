@@ -40,6 +40,30 @@ E vòilá! O projeto será executado na porta **http://127.0.0.1:8080/**. Confor
 
 ![alt_text](https://i.imgsafe.org/51/5167d436cd.png)
 
+Caso deseja criar um novo arquivo .html, basta criar um arquivo dentro da pasta **pages/** um arquivo .md. Por exemplo:
+
+```
+pages/teste.md
+
+```
+
+Daí basta começar a criar a página no formato **Markdown** ou **Jekill**. Depois que concluir a página, basta executar o seguinte comando no prompt de comando:
+
+```
+> npm rum build:pages
+```
+
+Este comando irá criar uma espécie de 'transpiler' do que você criou no arquivo **teste.md** e criará um arquivo **teste.html** na pasta: build/..
+
+Com isso, basta começar a fazer as alterações necessárias que o projeto automaticamente irá alterar em tempo real para você!
+
+Após isso, execute o comando para visualizar as mudanças realizadas:
+
+```
+> npm run start
+```
+
+Caso tenham dúvidas com respeito ao tópico acima, não se hesite em abrir uma **[ISSUE](https://github.com/WoMakersCode/networking/issues)**
 
 ## Observações Finais: ⭐️
 
@@ -50,5 +74,3 @@ Dúvidas, não hesite em contatar-nos, abrindo uma **[ISSUE](https://github.com/
 ## Desejam Propor Melhorias no Código? Façam Pull Request!!! 🔥
 
 Caso desejam que eu implemente algo no código, abram uma [**ISSUE**](https://github.com/WoMakersCode/networking/issues) nesse repositório. Assim, todos poderão colaborar para o melhor desenvolvimento desse projeto. E sintam-se à vontade em fazer Pull Requests!! ❤️ ❤️ ❤️️
-
-**documentação em desenvolvimento**

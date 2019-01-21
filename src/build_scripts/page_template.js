@@ -45,12 +45,12 @@ module.exports = {
 `;
   },
   defaultMeta: {
-    lang: 'en',
+    lang: 'pt-br',
     title: 'A Page',
     stylesheets: ['./css/style.css'],
     scripts: ['./js/main.js'],
     charset: 'utf-8',
-    description: 'This is a page',
+    description: 'Essa é uma página',
     keywords: 'page, sample',
     author: 'None',
     favicon: './images/favicon.png',
