@@ -38,6 +38,12 @@ E vòilá! O projeto será executado na porta **http://127.0.0.1:8080/**. Confor
 ![alt_text](https://i.imgsafe.org/51/5167d436cd.png)
 
 
+## Observações Finais: ⭐️
+
+Esse projeto foi baseado no **[Node Static Page Generator](https://github.com/Chalarangelo/node-static-page-generator)**. Caso alguém deseja contribuir com o projeto (criando uma nova página), recomendo que dêem uma olhada no **[README.md]()** do projeto, para que possa entender como funciona o código. 
+Procurei fazer algumas modificações na arquitetura do projeto original, visando justamente a melhoria e qualidade na entrega do código.
+Dúvidas, não hesite em contatar-nos, abrindo uma **[ISSUE](https://github.com/WoMakersCode/networking/issues)** que estaremos tirando todas as dúvidas inerente ao projeto desenvolvido aqui! 😃
+
 ## Desejam Propor Melhorias no Código? Façam Pull Request!!! 🔥
 
 Caso desejam que eu implemente algo no código, abram uma [**ISSUE**](https://github.com/WoMakersCode/networking/issues) nesse repositório. Assim, todos poderão colaborar para o melhor desenvolvimento desse projeto. E sintam-se à vontade em fazer Pull Requests!! ❤️ ❤️ ❤️️
