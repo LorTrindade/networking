@@ -1,6 +1,6 @@
 {
   "name": "novo-site-womakerscode",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "Projeto do novo site do WoMakersCode feito em Node.js, Jekill & HTML",
   "homepage": "http://womakerscode.org/",
   "main": "index.js",
