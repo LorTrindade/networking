@@ -1,8 +1,10 @@
+build/
+# Commonly ignored Node.js files
+node_modules/
+npm-debug.log
+.npm/
+
+# OSX system files, the bane of our existence
 .DS_Store
-node_modules
-npm-debug.log
-dist
-package
-npm-debug.log
-yarn-error.log
-package-lock.json
+.AppleDouble
+.LSOverride
