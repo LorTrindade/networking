@@ -25,7 +25,8 @@
     "jekyll",
     "html",
     "css",
-    "server"
+    "server",
+    "boostrap"
   ],
   "author": "Cynthia Zanoni (@cyn), Glaucia Lemos (@glaucia86), Luciana Marques (@LucianaMarques)",
   "license": "MIT",
