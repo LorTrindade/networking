@@ -4,49 +4,46 @@ layout: default
 
 <!-- Page Header -->
 
-<div class="container-fluid team-detail-header">
+<section class="container-fluid team-detail-header">
   <div class="container">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
       <h1>
-          {{ site.title }}
+        {{ site.title }}
         <span>"{{ site.description }}"</span>
       </h1>
     </div>
   </div>
+</section>
+
+<section class="container-fluid">
+<div class="row">
+  {% for post in site.posts limit : 5 %}
+
+  <article class="team-preview col-xs-12 col-sm-6 col-md-4 col-lg-3">
+    <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+      <figure class="speaker-preview__image">
+        <img src="{{post.photo | prepend: site.baseurl | replace: '//', '/' }}">
+      </figure>
+
+      <h2 class="team-preview__name">{{ post.nome }}</h2>
+      <ul class="team-preview__list">
+        {% if post.squad %}
+          <li class="team-preview__squad"><i class="fas fa-bolt"></i> {{ post.squad }}</li>
+        {% endif %}
+        {% if post.tags %}
+          <li class="team-preview__tag"><i class="fas fa-hashtag"></i> {{ post.tags }}</li>
+        {% endif %}
+        <li><i class="fab fa fa-map-marker-alt"></i> {{ post.local }}</li>
+      </ul>
+      
+    </a>
+  </article>
+
+  {% endfor %}
 </div>
+</section>
 
-
-
-
-        {{ content }}
-
-        <!-- Home Post List -->
-        {% for post in site.posts limit : 5 %}
-
-        <article class="post-preview">
-          <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-            <h2 class="post-title">{{ post.title }}</h2>
-            {% if post.subtitle %}
-            <h3 class="post-subtitle">{{ post.subtitle }}</h3>
-            {% else %}
-            <h3 class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 15 }}</h3>
-            {% endif %}
-          </a>
-          <p class="post-meta">Posted by
-            {% if post.author %}
-            {{ post.author }}
-            {% else %}
-            {{ site.author }}
-            {% endif %}
-            on
-            {{ post.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=post.content %}</p>
-        </article>
-
-        <hr>
-
-        {% endfor %}
-
-        <!-- Pager -->
-        <div class="clearfix">
-          <a class="btn btn-primary float-right" href="{{"/posts" | relative_url }}">View All Posts &rarr;</a>
-        </div>
+<!-- Pager -->
+<div class="clearfix">
+  <a class="btn btn-primary float-right" href="{{"/posts" | relative_url }}">View All Posts &rarr;</a>
+</div>

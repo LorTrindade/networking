@@ -1,22 +1,37 @@
 // Styling for the post page
-.post-preview {
+.team-preview {
   > a {
     color: $gray-900;
+    font-size: 1rem;
+
+    > .team-preview__list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+   
     &:focus,
     &:hover {
       text-decoration: none;
       color: $primary;
     }
-    > .post-title {
-      font-size: 30px;
-      margin-top: 30px;
-      margin-bottom: 10px;
-    }
-    > .post-subtitle {
-      font-weight: 300;
-      margin: 0 0 10px;
-    }
+
   }
+
+  .team-preview__name {
+    font-size: 1.5rem;
+    display: block;
+    line-height: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+  }
+
+  .team-preview__squad {
+    margin: 0;
+  }
+
   > .post-meta {
     font-size: 18px;
     font-style: italic;
@@ -38,5 +53,22 @@
         font-size: 36px;
       }
     }
+  }
+
+  .speaker-preview__image {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.1);
+    transition: transform .4s ease-out;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .speaker-preview__image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
   }
 }
