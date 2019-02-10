@@ -12,7 +12,7 @@ facebook_username: StartBootstrap
 
 # Build settings
 markdown:          kramdown
-paginate:          5
+paginate:          12
 paginate_path:     "/posts/page:num/"
 plugins:
   - jekyll-feed

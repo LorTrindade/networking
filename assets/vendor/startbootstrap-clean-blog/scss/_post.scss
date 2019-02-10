@@ -1,5 +1,8 @@
 // Styling for the post page
 .team-preview {
+
+  padding-bottom: 25px;
+  
   > a {
     color: $gray-900;
     font-size: 1rem;
@@ -13,7 +16,7 @@
     &:focus,
     &:hover {
       text-decoration: none;
-      color: $primary;
+      color: #C20052;
     }
 
   }
@@ -32,21 +35,8 @@
     margin: 0;
   }
 
-  > .post-meta {
-    font-size: 18px;
-    font-style: italic;
-    margin-top: 0;
-    color: $gray-600;
-    > a {
-      text-decoration: none;
-      color: $gray-900;
-      &:focus,
-      &:hover {
-        text-decoration: underline;
-        color: $primary;
-      }
-    }
-  }
+  
+
   @media only screen and (min-width: 768px) {
     > a {
       > .post-title {
@@ -71,4 +61,30 @@
     width: 100%;
     height: 100%;
   }
+
+  
+}
+
+.btn-contributors  {
+  text-transform: uppercase;
+  margin: 50px auto 0;
+  padding: 10px;
+  color: #fff;
+  background: linear-gradient(141deg, #F60200 0%, #E00055 75%);
+  font-size: 1.5rem;
+  display: block;
+  width: 300px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.btn-contributors:hover  { background: #000; color: #fff; text-decoration: none; }
+
+.cover-team {
+  background-size: cover;
+  padding: 150px 0 76px 0;
+  height: auto;
+  margin-bottom: 60px;
+  background: url(../img/bg-quem-faz.jpg) center no-repeat;
+  margin-top: 80px;
 }

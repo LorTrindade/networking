@@ -15,9 +15,9 @@ layout: default
   </div>
 </section>
 
-<section class="container-fluid">
+<section class="container-fluid ctn_stage1">
 <div class="row">
-  {% for post in site.posts limit : 5 %}
+  {% for post in site.posts limit : 8 %}
 
   <article class="team-preview col-xs-12 col-sm-6 col-md-4 col-lg-3">
     <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
@@ -44,6 +44,5 @@ layout: default
 </section>
 
 <!-- Pager -->
-<div class="clearfix">
-  <a class="btn btn-primary float-right" href="{{"/posts" | relative_url }}">View All Posts &rarr;</a>
-</div>
+<div class="clearfix"></div>
+<a class="btn-contributors" href="{{"/posts" | relative_url }}">Conheça nossa rede</a>
