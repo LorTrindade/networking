@@ -19,23 +19,7 @@
       color: #C20052;
     }
 
-  }
-
-  .team-preview__name {
-    font-size: 1.5rem;
-    display: block;
-    line-height: 3rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    padding: 0;
-    margin: 0;
-  }
-
-  .team-preview__squad {
-    margin: 0;
-  }
-
-  
+  } 
 
   @media only screen and (min-width: 768px) {
     > a {
@@ -44,25 +28,94 @@
       }
     }
   }
+}
 
-  .speaker-preview__image {
-    position: relative;
-    width: 100%;
-    height: 300px;
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.1);
-    transition: transform .4s ease-out;
-    transform: translate3d(0, 0, 0);
+.team-preview__name {
+  font-size: 1.5rem;
+  display: block;
+  line-height: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+
+.team-preview__squad {
+  margin: 0;
+}
+
+.speaker-preview__image {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.1);
+  transition: transform .4s ease-out;
+  transform: translate3d(0, 0, 0);
+}
+
+.speaker-preview__image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.member_profile {
+  padding-top: 120px;
+
+  .team-preview__name {
+    font-size: 40px;
+    line-height: 5rem;
+    text-transform: none;
   }
 
-  .speaker-preview__image img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
+  .team-preview__title {
+    margin: 15px 0;
   }
 
-  
+  .member_profile__social {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      display: inline-block;
+      margin: 0 5px 5px 0;
+      list-style: none;
+
+      a {
+        height: 30px;
+        width: 30px;
+        text-align: center;
+        color: #fff;
+        line-height: 30px;
+        display: block;
+        border-radius: 2px;
+        font-size: 18px;
+
+        &.facebook {
+            background-color: #5d82d1;
+        }
+
+        &.twitter {
+            background-color: #40bff5;
+        }
+
+        &.instagram {
+            background-color: #e4405f;
+        }
+
+        &.linkedin {
+            background-color: #0077B5;
+        }
+
+        &:hover {
+          background-color: #000;
+        }
+      }
+    }
+  }
 }
 
 .btn-contributors  {
