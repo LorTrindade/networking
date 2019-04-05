@@ -1,52 +1,46 @@
----
-layout: default
----
+<!DOCTYPE html>
 
-<!-- Page Header -->
-<div class="container">
-  <article class="member_profile col-lg-8 col-md-10 mx-auto">
-    <figure class="speaker-preview__image">
-      <img src="{{page.photo | prepend: site.baseurl | replace: '//', '/' }}">
-    </figure>
+<html>
 
-    <h1 class="team-preview__name">{{ page.nome }}</h1>
+  {% include head.html %}
 
-    {% if page.function %}
-    <p class="team-preview__title">[ {{ page.function }} ]</p>
-    {% endif %}
+  <body class="loaded" cz-shortcut-listen="true">
+      <!-- top header -->
+      <section class="header-wrapper style-two bottom-border cover--home">
+          {% include navbar.html %}
+      </section>
+      <!-- top header -->
+      
+      <section class="container">
+          <h1 class="team-preview__name">{{ page.title }}</h1>
+          <figure class="speaker-preview__image">
+            <img src="/img/posts/01.jpg" class="rounded">
+          </figure>
+          <ul class="member_profile__social">
+            <li><a class="facebook" href="{{ page.facebook }}"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a class="twitter" href="{{ page.twitter }}"><i class="fab fa-twitter"></i></a></li>
+            <li><a class="instagram" href="{{ page.instagram }}"><i class="fab fa-instagram"></i></a></li>
+            <li><a class="linkedin" href="{{ page.linkedin }}"><i class="fab fa-linkedin"></i></a></li>
+          </ul>
+          {{ content }}
 
-    <ul class="member_profile__social">
-      <li><a class="facebook" href="{{ page.facebook }}"><i class="fab fa-facebook-f"></i></a></li>
-      <li><a class="twitter" href="{{ page.twitter }}"><i class="fab fa-twitter"></i></a></li>
-      <li><a class="instagram" href="{{ page.instagram }}"><i class="fab fa-instagram"></i></a></li>
-      <li><a class="linkedin" href="{{ page.linkedin }}"><i class="fab fa-linkedin"></i></a></li>
-    </ul>
+          {% if page.previous.url %}
+          <a class="btn-contributors float-left" href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}"
+            data-toggle="tooltip" data-placement="top" title="{{ page.previous.title }}">&larr; Perfil<span class="d-none d-md-inline">
+              Anterior</span></a>
+          {% endif %}
+          {% if page.next.url %}
+          <a class="btn-contributors float-right" href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}"
+            data-toggle="tooltip" data-placement="top" title="{{ page.next.title }}">Próximo<span class="d-none d-md-inline">
+              Perfil</span> &rarr;</a>
+          {% endif %}
 
-    <p>
-      <strong><i class="fas fa-bolt"></i> Squad:</strong> {{ post.squad }} <br/>
-      <strong><i class="fas fa-hashtag"></i> Áreas de atuação:</strong> {{ post.squad }} <br/>
-      <strong><i class="fab fa fa-map-marker-alt"></i> Localização: </strong> {{ post.local }}
-    </p>
-
-    {{ content }}
-
-    <hr>
-
-    <div class="clearfix"></div>
+      </section>
   
-      {% if page.previous.url %}
-      <a class="btn-contributors float-left" href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}"
-        data-toggle="tooltip" data-placement="top" title="{{ page.previous.title }}">&larr; Perfil<span class="d-none d-md-inline">
-          Anterior</span></a>
-      {% endif %}
-      {% if page.next.url %}
-      <a class="btn-contributors float-right" href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}"
-        data-toggle="tooltip" data-placement="top" title="{{ page.next.title }}">Próximo<span class="d-none d-md-inline">
-          Perfil</span> &rarr;</a>
-      {% endif %}
+      {% include footer.html %}
+  
+      {% include scripts.html %}
+  
+    </body>
 
-    <div class="clearfix"></div>
-
-  </article>
-
-</div>
+</html>

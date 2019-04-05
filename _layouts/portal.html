@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+
+  {% include head.html %}
+
+  <body class="loaded" cz-shortcut-listen="true">
+    <!-- top header -->
+    <section class="header-wrapper style-two bottom-border cover--home">
+        {% include navbar.html %}
+
+        <div class="cover-content">
+            <div class="container">
+                <p>
+                    Nós {Somos, Criamos e Programamos} o
+                    <span>PROTAGONISMO</span>
+                    <span>FEMININO</span>
+                    NA TECNOLOGIA
+                </p>                
+            </div>
+        </div>
+    </section>
+    <!-- top header -->    
+
+    {{ content }}
+
+    {% include footer.html %}
+
+    {% include scripts.html %}
+
+  </body>
+
+</html>

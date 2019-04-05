@@ -1,26 +1,37 @@
 // Styling for the post page
-.team-preview {
-
-  padding-bottom: 25px;
-  
+.post-preview {
   > a {
     color: $gray-900;
-    font-size: 1rem;
-
-    > .team-preview__list {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-   
     &:focus,
     &:hover {
       text-decoration: none;
-      color: #C20052;
+      color: $primary;
     }
-
-  } 
-
+    > .post-title {
+      font-size: 30px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+    > .post-subtitle {
+      font-weight: 300;
+      margin: 0 0 10px;
+    }
+  }
+  > .post-meta {
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 0;
+    color: $gray-600;
+    > a {
+      text-decoration: none;
+      color: $gray-900;
+      &:focus,
+      &:hover {
+        text-decoration: underline;
+        color: $primary;
+      }
+    }
+  }
   @media only screen and (min-width: 768px) {
     > a {
       > .post-title {
@@ -28,116 +39,4 @@
       }
     }
   }
-}
-
-.team-preview__name {
-  font-size: 1.5rem;
-  display: block;
-  line-height: 3rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  padding: 0;
-  margin: 0;
-}
-
-.team-preview__squad {
-  margin: 0;
-}
-
-.speaker-preview__image {
-  position: relative;
-  width: 100%;
-  height: 300px;
-  border-radius: 5px;
-  overflow: hidden;
-  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.1);
-  transition: transform .4s ease-out;
-  transform: translate3d(0, 0, 0);
-}
-
-.speaker-preview__image img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-
-.member_profile {
-  padding-top: 120px;
-
-  .team-preview__name {
-    font-size: 40px;
-    line-height: 5rem;
-    text-transform: none;
-  }
-
-  .team-preview__title {
-    margin: 15px 0;
-  }
-
-  .member_profile__social {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-
-    li {
-      display: inline-block;
-      margin: 0 5px 5px 0;
-      list-style: none;
-
-      a {
-        height: 30px;
-        width: 30px;
-        text-align: center;
-        color: #fff;
-        line-height: 30px;
-        display: block;
-        border-radius: 2px;
-        font-size: 18px;
-
-        &.facebook {
-            background-color: #5d82d1;
-        }
-
-        &.twitter {
-            background-color: #40bff5;
-        }
-
-        &.instagram {
-            background-color: #e4405f;
-        }
-
-        &.linkedin {
-            background-color: #0077B5;
-        }
-
-        &:hover {
-          background-color: #000;
-        }
-      }
-    }
-  }
-}
-
-.btn-contributors  {
-  text-transform: uppercase;
-  margin: 50px auto 0;
-  padding: 10px;
-  color: #fff;
-  background: linear-gradient(141deg, #F60200 0%, #E00055 75%);
-  font-size: 1.5rem;
-  display: block;
-  width: 300px;
-  text-align: center;
-  font-weight: 500;
-}
-
-.btn-contributors:hover  { background: #000; color: #fff; text-decoration: none; }
-
-.cover-team {
-  background-size: cover;
-  padding: 150px 0 76px 0;
-  height: auto;
-  margin-bottom: 60px;
-  background: url(../img/bg-quem-faz.jpg) center no-repeat;
-  margin-top: 80px;
 }

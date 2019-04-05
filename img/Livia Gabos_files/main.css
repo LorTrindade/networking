@@ -1,0 +1,292 @@
+        header {
+            background-color: #045199;
+            /* padding: 20px 0; */
+            color: #fff;
+            position: relative;
+            top: 0;
+            height: 120px;
+            overflow: hidden;
+        }
+        
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        header .container {
+            line-height: 100%;
+            overflow: hidden;
+        }
+        
+        header h1 {
+            line-height: 120px;
+            max-width: 30%;
+            float: left;
+        }
+        
+        header a {
+            color: #fffacd;
+            text-decoration: underline #fffacd 2px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        header a:hover {
+            background-color: #0A2C4C;
+            color: #fff;
+            text-decoration: underline #fffacd 2px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        header nav {
+            max-width: 70%;
+            float: right;
+            /* position: relative; */
+        }
+        
+        .menu-item {
+            margin-right: 30px;
+            display: inline-block;
+            height: 100%;
+        }
+        
+        .menu-item a {
+            padding: 0 10px;
+            display: block;
+            line-height: 120px;
+        }
+        
+        main {
+            /* background: repeating-linear-gradient( 45deg, rgba(48, 7, 140, 0.2), rgba(48, 7, 140, 0.2) 10px, rgba(88, 56, 159, 0.2) 10px, rgba(88, 56, 159, 0.2) 20px); */
+            background: repeating-linear-gradient( 45deg, rgba(245, 245, 245, 0.5), rgba(245, 245, 245, 0.5) 5px, rgba(232, 232, 232, 0.5) 5px, rgba(232, 232, 232, 0.5) 10px);
+        }
+        
+        main .main_container {
+            width: 100%;
+        }
+        
+        main .container_bg {
+            background-color: #f3fafe;
+            padding: 40px 0;
+        }
+        
+        main .container {}
+        
+        #jobs li {
+            margin-bottom: 5px;
+        }
+        
+        .container section:nth-child(odd) {
+            background-color: #fff;
+        }
+        
+        .container section {
+            padding: 40px 25px;
+            overflow: hidden;
+        }
+        
+        #aboutme {
+            position: absolute;
+        }
+        
+        #photo {
+            background-image: url('../img/perfil.jpg');
+            background-size: 100%;
+            background-repeat: no-repeat;
+            height: 300px;
+            width: 30%;
+            margin-right: 30px;
+            float: left;
+        }
+        
+        #sobre {
+            width: 65%;
+            position: relative;
+            float: left;
+        }
+        
+        .social_icon {}
+        
+        .social_icon li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        
+        .social_icon li a {
+            height: 50px;
+            width: 50px;
+            text-align: center;
+            display: block;
+            line-height: 50px;
+        }
+        
+        #twitter {
+            background-image: url('../img/icon/twitter_pb.png');
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        
+        #git {
+            background-image: url('../img/icon/github_pb.png');
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        
+        #email {
+            background-image: url('../img/icon/email_pb.png');
+            background-size: 95%;
+            background-repeat: no-repeat;
+        }
+        
+        #research {
+            background-image: url('../img/icon/researchgate.png');
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        
+        #lattes {
+            background-image: url('../img/icon/lattes_pb.png');
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        
+        #linkedin {
+            background-image: url('../img/icon/linkedin_pb.png');
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        
+        footer {
+            background-color: #0A2C4C;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        footer .container {
+            padding: 20px;
+        }
+        
+        @media screen and (max-width: 990px) {
+            .container {
+                max-width: 90% !important;
+            }
+            header nav {
+                float: right;
+            }
+        }
+        
+        @media screen and (max-width: 930px) {
+            .container {
+                max-width: 95% !important;
+            }
+            header nav {
+                /* float: right; */
+            }
+            .menu-item {
+                margin-right: 15px;
+            }
+        }
+        
+        @media screen and (max-width: 780px) {
+            .container {
+                max-width: 100% !important;
+            }
+        }
+        
+        @media screen and (max-width: 745px) {
+            header nav {
+                /* float: right; */
+            }
+            .menu-item {
+                margin-right: 10px;
+            }
+            .container section {
+                padding: 30px 35px;
+            }
+            #aboutme {
+                position: absolute;
+                overflow: hidden;
+                width: 100%;
+            }
+            .img_perfil {
+                text-align: center;
+                width: 100%;
+            }
+            #photo {
+                height: 350px;
+                width: 350px;
+                float: none;
+                margin: 0 auto;
+            }
+            #sobre {
+                width: 100% !important;
+                position: relative;
+                margin: 30px 0 20px 0;
+            }
+        }
+        
+        @media screen and (max-width: 720px) {
+            header {
+                height: 100%;
+            }
+            header h1 {
+                font-size: 32px;
+                font-weight: bold;
+                width: 100%;
+                text-align: center;
+                line-height: 60px;
+            }
+            header nav {
+                /* float: none !important; */
+                width: 100%;
+                line-height: 60px;
+                text-align: center;
+                /* vertical-align: center; */
+            }
+            header nav ul {
+                margin-bottom: 0;
+            }
+            .menu-item a {
+                line-height: 60px;
+                padding: 0 5px;
+            }
+            .social_icon li {
+                margin-bottom: 20px;
+            }
+        }
+        
+        @media screen and (max-width: 600px) {
+            header h1 {
+                float: none !important;
+                max-width: 100%;
+                text-align: center;
+                display: block;
+                margin-bottom: 0;
+            }
+            header nav {
+                float: none !important;
+                max-width: 100%;
+                text-align: center;
+            }
+        }
+        
+        @media screen and (max-width: 440px) {
+            #photo {
+                max-width: 100%;
+            }
+            .container section {
+                padding: 15px 20px;
+            }
+            #sobre {
+                margin: 10px 0 20px 0;
+            }
+        }
+        
+        @media screen and (max-width: 360px) {
+            #sobre {
+                margin: 0 0 20px 0;
+            }
+        }
