@@ -105,7 +105,7 @@ blockquote p {line-height: 1.6;}
 
 .line-link:after {height: 40px;background-color: #111; width: 2px; position: absolute; bottom: -60px; content: ''; position: absolute; left:95px; }
 .has-animation {opacity: 0;-webkit-transition:  transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.15s, opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.15s;transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.15s, opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.15s; -webkit-transition:translateY(80px);transform: translateY(80px);}
-.has-animation.animate-in {opacity: 1;-webkit-transition:translateY(0px);transform: translateY(0px);}
+.has-animation.animate-in {opacity: 1;transform: translateY(0px);}
 .posttext-stroke {   text-stroke: 1px #000;    -webkit-text-stroke: 1px #000; -webkit-text-fill-color: transparent; font-weight: 500; font-size: 30px; line-height:48px; display: inline-block; position: relative; }
 .posttext-stroke:after { -webkit-text-fill-color: #333;   position: absolute;    top: 0;    left: 0;    font-size: 30px; content: attr(data-title); clip-path: inset(0 0 0 0);-webkit-clip-path: inset(0 0 0 0);-webkit-transition: 1s;-moz-transition: 1s;transition: 1s;}
 .posttext-stroke:hover:after {clip-path: inset(0 0 0 100%);    -webkit-clip-path: inset(0 0 0 100%); -webkit-text-fill-color: #333; }
@@ -1342,11 +1342,24 @@ footer a {
     line-height: 45px;
 }
 
-
-
-
 .cover--home {
     background: url(../images/cover.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.cover--about {
+    background: url(../images/cover-about.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.cover--events,
+.cover--cities{
+    background: url(../images/cover-events.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.cover--contact {
+    background: url(../images/cover-contact.jpg) center no-repeat;
     background-size: cover;
 }
 
@@ -1426,7 +1439,7 @@ footer a {
     display: inline-block;
     text-transform: uppercase;
     border-radius: 3px;
-    margin-top: 15px;
+    margin: 15px 0;
 }
 
 .box-content h2 span {

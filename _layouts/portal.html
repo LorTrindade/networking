@@ -6,16 +6,13 @@
 
   <body class="loaded" cz-shortcut-listen="true">
     <!-- top header -->
-    <section class="header-wrapper style-two bottom-border cover--home">
+    <section class="header-wrapper style-two bottom-border {{ page.class }}">
         {% include navbar.html %}
 
         <div class="cover-content">
             <div class="container">
                 <p>
-                    Nós {Somos, Criamos e Programamos} o
-                    <span>PROTAGONISMO</span>
-                    <span>FEMININO</span>
-                    NA TECNOLOGIA
+                    {{ page.coverText }}
                 </p>                
             </div>
         </div>
