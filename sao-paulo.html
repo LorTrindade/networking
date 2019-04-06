@@ -1,0 +1,35 @@
+---
+layout: portal
+class: cover--cities
+coverText: "Quem faz a força da <span>nossa rede</span>"
+category: city
+title: São Paulo
+---
+
+<!-- box content -->
+
+<section class="box-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <h2>Quem faz a força da <span>nossa rede</span></h2>
+            </div>
+            
+            {% for item in site.posts %}
+
+            <div class="col-lg-4 col-md-4 container-program container-program--team">
+                <a href="{{ item.url | prepend: site.baseurl | replace: '//', '/' }}">
+                    <figure class="speaker-preview__image">
+                        <img src="assets/images/wearewomakers.JPG" class="img-fluid">
+                    </figure>
+                    <h3>{{ item.title }}</h3>
+                </a>
+            </div>
+          
+            {% endfor %}
+
+        </div>
+    </div>
+</section>
+
+<!-- box content -->
