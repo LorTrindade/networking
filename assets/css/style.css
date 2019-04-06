@@ -1551,6 +1551,10 @@ footer a {
     .cover-content {
         padding: 60px 0;
     }
+
+    .list-content-impact li { 
+        width: 100%;
+    }
 }
 
 .speaker-preview__image {
@@ -1625,4 +1629,25 @@ footer a {
 
 .member_profile__social li a:hover {
 	background-color: #000
+}
+
+.list-content-impact {
+    list-style: none;
+}
+
+.list-content-impact li {
+    width: 50%;
+    padding: 20px;
+    float: left;
+}
+
+.list-content-impact li p {
+    margin: 0;
+}
+
+.list-content-impact li em {
+    font-size: 4rem;
+    font-weight: 800;
+    display: block;
+    line-height: 3.5rem;
 }
