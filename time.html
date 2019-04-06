@@ -16,9 +16,9 @@ coverText: "Quem faz a força da <span>nossa rede</span>"
             {% for item in site.posts %}
 
             <div class="col-lg-4 col-md-4 container-program container-program--team">
-                <a href="{{ item.url | prepend: site.baseurl | replace: '//', '/' }}">
+                <a href="{{ item.url | prepend: site.baseurl | replace: '//', '/' }}" title="Voluntária {{ item.title }}">
                     <figure class="speaker-preview__image">
-                        <img src="assets/images/wearewomakers.JPG" class="img-fluid">
+                        <img src="{{ item.image }}" class="img-fluid" alt="Foto de {{ item.title }}" />
                     </figure>
                     <h3>{{ item.title }}</h3>
                 </a>
