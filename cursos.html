@@ -12,88 +12,28 @@ coverText: "Próximos <span>eventos</span>"
             <div class="col-lg-12 col-md-12">
                 <h2>Próximos <span>eventos</span></h2>
             </div>
-
-            <div class="col-lg-4 col-md-4 container-events">
-                <a href="#">
-                    <img src="assets/images/icone-fake.PNG" class="img-fluid" />
-
-                    <ul class="container-events__key-info">
-                        <li>
-                            <h3>Desenvolvimento na Prática</h3>
-                            <p>
-                                <span>Rio de Janeiro - RJ</span>
-                                <span>Senac Flamengo</span>
-                                <span>9h - 17h</span>
-                            </p>
-                        </li>
-                        <li>
-                            <p><span>Mar</span> 30</p>
-                        </li>
-                    </ul>
-                    <div class="clearfix"></div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-4 container-events">
-                <a href="#">
-                    <img src="assets/images/icone-fake.PNG" class="img-fluid" />
-
-                    <ul class="container-events__key-info">
-                        <li>
-                            <h3>Desenvolvimento na Prática</h3>
-                            <p>
-                                <span>Rio de Janeiro - RJ</span>
-                                <span>Senac Flamengo</span>
-                                <span>9h - 17h</span>
-                            </p>
-                        </li>
-                        <li>
-                            <p><span>Mar</span> 30</p>
-                        </li>
-                    </ul>
-                    <div class="clearfix"></div>
-                </a>
-            </div>
-            
-            <div class="col-lg-4 col-md-4 container-events">
-                <a href="#">
-                    <img src="assets/images/icone-fake.PNG" class="img-fluid" />
-
-                    <ul class="container-events__key-info">
-                        <li>
-                            <h3>Desenvolvimento na Prática</h3>
-                            <p>
-                                <span>Rio de Janeiro - RJ</span>
-                                <span>Senac Flamengo</span>
-                                <span>9h - 17h</span>
-                            </p>
-                        </li>
-                        <li>
-                            <p><span>Mar</span> 30</p>
-                        </li>
-                    </ul>
-                    <div class="clearfix"></div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-4 container-events">
-                <a href="#">
-                    <img src="assets/images/icone-fake.PNG" class="img-fluid" />
-
-                    <ul class="container-events__key-info">
-                        <li>
-                            <h3>Desenvolvimento na Prática</h3>
-                            <p>
-                                <span>Rio de Janeiro - RJ</span>
-                                <span>Senac Flamengo</span>
-                                <span>9h - 17h</span>
-                            </p>
-                        </li>
-                        <li>
-                            <p><span>Mar</span> 30</p>
-                        </li>
-                    </ul>
-                    <div class="clearfix"></div>
-                </a>
-            </div>
+            {% for block in site.data.calendar.events %}
+                <div class="col-lg-4 col-md-4 container-events">
+                    <a href="{{ block.url | prepend: site.baseurl }}" target="_blank">
+                        <img src="assets/images/icone-fake.PNG" class="img-fluid" />
+    
+                        <ul class="container-events__key-info">
+                            <li>
+                                <h3>{{ block.title }}</h3>
+                                <p>
+                                    <span>{{ block.city }} - {{ block.state }}</span>
+                                    <span>{{ block.hostName }}</span>
+                                    <span>{{ block.time }}</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p><span>{{ block.month }}</span> {{ block.day }}</p>
+                            </li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </a>
+                </div>
+            {% endfor %}
         </div>
     </div>
 </section>
@@ -109,27 +49,28 @@ coverText: "Próximos <span>eventos</span>"
                 <h2>Nossos <span>Cursos</span></h2>
             </div>
 
+            {% for block in site.data.training.training %}
             <div class="col-lg-4 col-md-4 container-events">
-                <a href="#">
+                <a href="{{ block.url | prepend: site.baseurl }}" target="_blank">
                     <img src="assets/images/icone-fake.PNG" class="img-fluid" />
 
                     <ul class="container-events__key-info">
                         <li>
-                            <h3>Desenvolvimento na Prática</h3>
+                            <h3>{{ block.title }}</h3>
                             <p>
-                                <span>Rio de Janeiro - RJ</span>
-                                <span>Senac Flamengo</span>
-                                <span>9h - 17h</span>
+                                <span>{{ block.city }} - {{ block.state }}</span>
+                                <span>{{ block.hostName }}</span>
+                                <span>{{ block.time }}</span>
                             </p>
                         </li>
                         <li>
-                            <p><span>Mar</span> 30</p>
+                            <p><span>{{ block.month }}</span> {{ block.day }}</p>
                         </li>
                     </ul>
                     <div class="clearfix"></div>
                 </a>
             </div>
-            
+        {% endfor %}            
         </div>
     </div>
 </section>
