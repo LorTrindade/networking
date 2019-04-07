@@ -12,29 +12,38 @@
       <!-- top header -->
       
       <section class="container">
+          <div class="box-content">
+          <div class="speaker-preview__image">
+            <figure class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+              <img src="{{ page.image }}" title="{{ page.title }}" />
+            </figure>
+          </div>
+
           <h1 class="team-preview__name">{{ page.title }}</h1>
-          <figure class="speaker-preview__image">
-            <img src="/img/posts/01.jpg" class="rounded">
-          </figure>
           <ul class="member_profile__social">
-            <li><a class="facebook" href="{{ page.facebook }}"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a class="twitter" href="{{ page.twitter }}"><i class="fab fa-twitter"></i></a></li>
-            <li><a class="instagram" href="{{ page.instagram }}"><i class="fab fa-instagram"></i></a></li>
-            <li><a class="linkedin" href="{{ page.linkedin }}"><i class="fab fa-linkedin"></i></a></li>
+              {% if page.facebook %}
+              <li><a class="facebook" href="{{ page.facebook }}"><i class="fab fa-facebook-f"></i></a></li>
+              {% endif %}
+
+              {% if page.twitter %}
+              <li><a class="twitter" href="{{ page.twitter }}"><i class="fab fa-twitter"></i></a></li>
+              {% endif %}
+
+              {% if page.instagram %}
+              <li><a class="instagram" href="{{ page.instagram }}"><i class="fab fa-instagram"></i></a></li>
+              {% endif %}
+
+              {% if page.linkedin %}
+              <li><a class="linkedin" href="{{ page.linkedin }}"><i class="fab fa-linkedin"></i></a></li>
+              {% endif %}
+
+              {% if page.github %}
+              <li><a class="github" href="{{ page.github }}"><i class="fab fa-github"></i></a></li>
+              {% endif %}
           </ul>
+
           {{ content }}
-
-          {% if page.previous.url %}
-          <a class="btn-contributors float-left" href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}"
-            data-toggle="tooltip" data-placement="top" title="{{ page.previous.title }}">&larr; Perfil<span class="d-none d-md-inline">
-              Anterior</span></a>
-          {% endif %}
-          {% if page.next.url %}
-          <a class="btn-contributors float-right" href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}"
-            data-toggle="tooltip" data-placement="top" title="{{ page.next.title }}">Próximo<span class="d-none d-md-inline">
-              Perfil</span> &rarr;</a>
-          {% endif %}
-
+        </div>
       </section>
   
       {% include footer.html %} 
