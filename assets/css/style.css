@@ -1465,6 +1465,10 @@ footer a {
     text-decoration: none;
 }
 
+.container-events a img {
+    min-height: 195px;
+}
+
 .container-program a img {
     max-width: 80%;
     padding: 20px 0;
@@ -1538,6 +1542,23 @@ footer a {
 .container-events__key-info li:last-child p span {
     display: block;
     font-size: 1.5rem;
+}
+
+.container-events--course .container-events__key-info li:last-child p {
+    background: transparent;
+}
+
+.container-events--course .container-events__key-info li:last-child p span {
+    font-size: .8rem;
+    line-height: 1rem;
+    text-align: center;
+    display: block;
+    padding: 15px 0;
+
+}
+
+.container-events--course .container-events__key-info li:last-child p span i {
+    font-size: 3rem;
 }
 
 

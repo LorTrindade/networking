@@ -15,7 +15,7 @@ coverText: "Próximos <span>eventos</span>"
             {% for block in site.data.calendar.events %}
                 <div class="col-lg-4 col-md-4 container-events">
                     <a href="{{ block.url | prepend: site.baseurl }}" target="_blank">
-                        <img src="assets/images/icone-fake.PNG" class="img-fluid" />
+                        <img src="{{ block.banner }}" class="img-fluid" />
     
                         <ul class="container-events__key-info">
                             <li>
@@ -46,25 +46,24 @@ coverText: "Próximos <span>eventos</span>"
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12">
-                <h2>Nossos <span>Cursos</span></h2>
+                <h2>Conteúdos <span>online</span></h2>
             </div>
 
             {% for block in site.data.training.training %}
-            <div class="col-lg-4 col-md-4 container-events">
-                <a href="{{ block.url | prepend: site.baseurl }}" target="_blank">
-                    <img src="assets/images/icone-fake.PNG" class="img-fluid" />
+            <div class="col-lg-4 col-md-4 container-events container-events--course">
+                <a href="{{ block.url }}" target="_blank">
+                    <img src="{{ block.thumb }}" class="img-fluid" />
 
                     <ul class="container-events__key-info">
                         <li>
                             <h3>{{ block.title }}</h3>
                             <p>
-                                <span>{{ block.city }} - {{ block.state }}</span>
-                                <span>{{ block.hostName }}</span>
-                                <span>{{ block.time }}</span>
+                                <span>{{ block.subtitle }}</span>
+                                <span>Duração: {{ block.duration }}</span>
                             </p>
                         </li>
                         <li>
-                            <p><span>{{ block.month }}</span> {{ block.day }}</p>
+                            <p><span class="testp"><i class="fab fa-youtube"></i> assistir</span></p>
                         </li>
                     </ul>
                     <div class="clearfix"></div>

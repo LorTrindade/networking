@@ -1,9 +1,37 @@
 events:
-- title: Creative Content Writer
-  url: http://www.google.com.br
+- title: Hacking de Carreira
+  url: https://www.meetup.com/WoMakersCode/events/259944851/
+  banner: https://secure.meetupstatic.com/photos/event/a/2/1/1/highres_480161489.jpeg
+  city: Campinas
+  state: SP
+  hostName: Movile
+  time: 12:30h - 17h
+  month: Abr
+  day: 27
+- title: Front-end Study Group
+  url: https://www.sympla.com.br/rio-de-janeiro-front-end-study-group-3__494638
+  banner: https://images.sympla.com.br/5ca9377a55972-lg.jpg
   city: Rio de Janeiro
   state: RJ
-  hostName: Senac Rio
-  time: 9h - 17h
-  month: Mar
-  day: 30
+  hostName: Instituto Infnet
+  time: 09h - 17h
+  month: Abr
+  day: 27
+- title: Visual Studio 2019 Launch
+  url: https://www.meetup.com/WoMakersCode/events/259408109/
+  banner: https://secure.meetupstatic.com/photos/event/1/2/e/9/highres_479104841.jpeg
+  city: Aracaju
+  state: SE
+  hostName: Faculdade Maurício de Nassau
+  time: 14h - 17h
+  month: Mai
+  day: 18
+- title: Visual Studio 2019 Launch
+  url: https://www.meetup.com/WoMakersCode/events/259408079/
+  banner: https://secure.meetupstatic.com/photos/event/1/2/c/9/highres_479104809.jpeg
+  city: Rio de Janeiro
+  state: RJ
+  hostName: Em definicação
+  time: 14h - 17h
+  month: Mai
+  day: 25

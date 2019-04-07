@@ -15,12 +15,17 @@ coverText: "Quem faz a força da <span>nossa rede</span>"
             
             {% for item in site.posts %}
 
-            <div class="col-lg-4 col-md-4 container-program container-program--team">
-                <a href="{{ item.url | prepend: site.baseurl | replace: '//', '/' }}" title="Voluntária {{ item.title }}">
-                    <figure class="speaker-preview__image">
-                        <img src="{{ item.image }}" class="img-fluid" alt="Foto de {{ item.title }}" />
-                    </figure>
-                    <h3>{{ item.title }}</h3>
+            <div class="col-lg-3 col-md-3 container-program container-program--team">
+                {% if item.hasBio %}
+                    <a href="{{ item.url | prepend: site.baseurl | replace: '//', '/' }}" title="Voluntária {{ item.title }}">
+                    {% else %}
+                    <a href="{{ item.linkedin }}" title="Voluntária {{ item.title }}">
+                {% endif %}
+
+                <figure class="speaker-preview__image">
+                    <img src="{{ item.image }}" class="img-fluid" alt="Foto de {{ item.title }}" />
+                </figure>
+                <h3>{{ item.title }}</h3>
                 </a>
             </div>
           

@@ -1,10 +1,55 @@
 training:
-- title: Creative Content Writer
-  url: http://www.google.com.br
+- title: Infra as Code - Infra virou Dev?
+  subtitle: Webinar com Jaqueline Ramos
+  url: https://www.youtube.com/watch?v=vM1r8qguii0
+  thumb: http://img.youtube.com/vi/vM1r8qguii0/0.jpg
   type: online
-  city: Rio de Janeiro
-  state: RJ
-  hostName: Senac Rio
-  time: 9h - 17h
-  month: Mar
-  day: 30
+  duration: 1:10h
+- title: Introdução ao Azure DevOps
+  subtitle: Webinar com Jaqueline Ramos
+  url: https://www.youtube.com/watch?v=ShCB2Ipu3rw&t=2s
+  thumb: http://img.youtube.com/vi/ShCB2Ipu3rw/0.jpg
+  type: online
+  duration: 1:10h
+- title: Personal Branding
+  subtitle: A importância da gestão da sua marca pessoal
+  url: https://www.youtube.com/watch?v=Iar8FqzF9Lk&list=PLDOwn_8Q5OSOdqwMHnx3GsMpu_hGEuCzY&index=1
+  thumb: http://img.youtube.com/vi/Iar8FqzF9Lk/0.jpg
+  type: online
+  duration: 1:30h
+- title: LinkedIn
+  subtitle: Um guia prático e GIRL POWER⚡
+  url: https://www.youtube.com/watch?v=OvUR-s5tgGo&list=PLDOwn_8Q5OSOdqwMHnx3GsMpu_hGEuCzY&index=2
+  thumb: http://img.youtube.com/vi/OvUR-s5tgGo/0.jpg
+  type: online
+  duration: 1:30h
+- title: Tratamento, Modelagem e Análise de Dados
+  subtitle: Com Excel, Power Pivot e Power Query
+  url: https://www.youtube.com/watch?v=ayLdUYpy_0s
+  thumb: http://img.youtube.com/vi/ayLdUYpy_0s/0.jpg
+  type: online
+  duration: 1h
+- title: Mineração de textos usando Python
+  subtitle: Palestra de Barbara Claudino
+  url: https://www.youtube.com/watch?v=ugbmWV7tIRo&list=PLDOwn_8Q5OSObr12rZbcU0Xm7aypTnYYy
+  thumb: http://img.youtube.com/vi/ugbmWV7tIRo/0.jpg
+  type: online
+  duration: 40min
+- title: Acessibilidade Web Cognitiva
+  subtitle: Palestra de Talita Pagani
+  url: https://www.youtube.com/watch?v=gKgeUMWmTQE&list=PLDOwn_8Q5OSObr12rZbcU0Xm7aypTnYYy&index=2
+  thumb: http://img.youtube.com/vi/gKgeUMWmTQE/0.jpg
+  type: online
+  duration: 30min
+- title: Descomplicando o alinhamento com CSS
+  subtitle: Palestra de Fernanda Bernardo
+  url: https://www.youtube.com/watch?v=t-V8OEmuc44&list=PLDOwn_8Q5OSObr12rZbcU0Xm7aypTnYYy&index=3
+  thumb: http://img.youtube.com/vi/t-V8OEmuc44/0.jpg
+  type: online
+  duration: 30min
+- title: Usando NgRx (Redux) com Angular 4
+  subtitle: Palestra de Loiane Groner
+  thumb: http://img.youtube.com/vi/ju1fhVxvZ1g/0.jpg
+  url: https://www.youtube.com/watch?v=ju1fhVxvZ1g&list=PLDOwn_8Q5OSObr12rZbcU0Xm7aypTnYYy&index=9
+  type: online
+  duration: 40min
